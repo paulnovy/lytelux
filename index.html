@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lytelux</title>
+    <meta name="description" content="Lytelux — a fresh, modern landing page. Rebuilding from the ground up." />
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="%23ffcc00"/><stop offset="1" stop-color="%23ff8800"/></linearGradient></defs><g fill="url(%23g)"><path d="M64 14c-22.6 0-41 17.7-41 39.5 0 13.7 7.4 25.8 18.6 32.7.9.5 1.4 1.5 1.2 2.6-1.4 7.4 2.6 13.8 9.2 16.2 2.3.8 4.9 1.1 7.8 1.1s5.5-.3 7.8-1.1c6.6-2.4 10.6-8.8 9.2-16.2-.2-1.1.3-2.1 1.2-2.6 11.2-6.9 18.6-19 18.6-32.7C105 31.7 86.6 14 64 14z"/><rect x="49" y="102" width="30" height="8" rx="4"/></g></svg>' />
+
+    <!-- Basic Open Graph tags -->
+    <meta property="og:title" content="Lytelux" />
+    <meta property="og:description" content="Rewriting the Lytelux site from scratch. Stay tuned." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#" aria-label="Lytelux home">
+          <svg class="brand-mark" width="28" height="28" viewBox="0 0 128 128" aria-hidden="true">
+            <defs>
+              <linearGradient id="logo-g" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#ffcc00" />
+                <stop offset="1" stop-color="#ff8800" />
+              </linearGradient>
+            </defs>
+            <g fill="url(#logo-g)">
+              <path d="M64 14c-22.6 0-41 17.7-41 39.5 0 13.7 7.4 25.8 18.6 32.7.9.5 1.4 1.5 1.2 2.6-1.4 7.4 2.6 13.8 9.2 16.2 2.3.8 4.9 1.1 7.8 1.1s5.5-.3 7.8-1.1c6.6-2.4 10.6-8.8 9.2-16.2-.2-1.1.3-2.1 1.2-2.6 11.2-6.9 18.6-19 18.6-32.7C105 31.7 86.6 14 64 14z"/>
+              <rect x="49" y="102" width="30" height="8" rx="4"/>
+            </g>
+          </svg>
+          <span class="brand-text">Lytelux</span>
+        </a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Lighting, reimagined.</h1>
+          <p class="sub">We’re rebuilding the Lytelux experience from the ground up. Simple, elegant, and thoughtfully designed.</p>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:hello@lytelux.com?subject=Lytelux%20—%20Keep%20me%20posted">Keep me posted</a>
+            <a class="button ghost" href="#features">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="feature-grid">
+            <article class="card">
+              <div class="icon" aria-hidden="true">💡</div>
+              <h3>Clarity</h3>
+              <p>Clean design and effortless control, focused on what matters.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">⚡</div>
+              <h3>Performance</h3>
+              <p>Fast by default with a lightweight, modern foundation.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">🌿</div>
+              <h3>Simplicity</h3>
+              <p>Minimal setup, intuitive flows, and a calm aesthetic.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <p>Have questions or ideas? <a href="mailto:hello@lytelux.com">hello@lytelux.com</a></p>
+        <small>© <span id="y"></span> Lytelux. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script>
+      // Update footer year without blocking rendering.
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
