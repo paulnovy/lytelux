@@ -1,0 +1,20 @@
+@import "@ui/tokens.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html:focus-within { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); }
+
+/* Focus visibility */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+

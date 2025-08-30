@@ -1,0 +1,11 @@
+{
+  "urls": ["http://localhost:3000/pl"],
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "ignore": [
+      "notice"
+    ]
+  }
+}
+

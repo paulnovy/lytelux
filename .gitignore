@@ -1,0 +1,31 @@
+# Node
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+.turbo/
+dist/
+build/
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+
+# Generated images
+apps/web/public/media/
+
